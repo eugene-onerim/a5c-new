@@ -1,0 +1,26 @@
+remote_agents:
+  enabled: true
+  cache_timeout: 120  # 2 hours
+  retry_attempts: 5
+  retry_delay: 2000   # 2 seconds
+  sources:
+    individual:
+      # Core Development Agents
+      - uri: "https://raw.githubusercontent.com/a5c-ai/registry/main/agents/development/developer-agent.agent.md"
+        alias: "developer-agent"
+      - uri: "https://raw.githubusercontent.com/a5c-ai/registry/main/agents/development/validator-agent.agent.md"
+        alias: "validator-agent"
+      - uri: "https://raw.githubusercontent.com/a5c-ai/registry/main/agents/development/producer-agent.agent.md"
+        alias: "producer-agent"
+      - uri: "https://raw.githubusercontent.com/a5c-ai/registry/main/agents/development/build-fixer-agent.agent.md"
+        alias: "build-fixer-agent"
+      - uri: "https://raw.githubusercontent.com/a5c-ai/registry/main/agents/development/conflict-resolver-agent.agent.md"
+        alias: "conflict-resolver-agent"
+      
+      # Research & Analysis Agents
+      - uri: "https://raw.githubusercontent.com/a5c-ai/registry/main/agents/research/researcher-base-agent.agent.md"
+        alias: "researcher-base-agent"
+      
+      # Communication & Content Agents
+      - uri: "https://raw.githubusercontent.com/a5c-ai/registry/main/agents/communication/content-writer-agent.agent.md"
+        alias: "content-writer-agent"
